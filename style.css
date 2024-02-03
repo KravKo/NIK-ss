@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poor+Story&family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+/* font-family: 'Quicksand', sans-serif; */
+
+:root {
+    --primary-color: rgb(30 35 38);
+    --secondary-color: #3c3c5d;
+    --primary-text-color: rgb(255, 255, 255);
+    --secondary-text-color: rgb(235, 224, 224);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Change the width and height of the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+/* Change the color and rounded corners of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    height: 10px;
+}
+
+
+
+
+body {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav {
+    margin: auto;
+    margin-top: 12px;
+    width: 80vw;
+    padding: 10px 44px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+
+}
+
+.nav-icons ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-icons ul li a {
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+.nav-icons ul li {
+    list-style: none;
+}
+
+.nav-icons ul li a:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    transition: .5s;
+}
+
+
+
+.logo img {
+    height: 50px;
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: 'Poppins', sans-serif;
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+.mobile_icons_responsive {
+    display: none;
+    margin: auto;
+}
+
+.section-1 {
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    margin-top: 2px;
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.left-1 .watermark img {
+    height: 340px;
+    filter: opacity(20%);
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.left-1 .text-1 {
+    position: absolute;
+    color: var(--primary-text-color);
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.left-2 {
+    background-color: #5a419a;
+    border-radius: 12px;
+    height: auto;
+    width: 50%;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    color: var(--primary-text-color);
+    font-family: poppins;
+}
+
+.left-boxes {
+    background-color: var(--primary-color);
+    padding: 25px 70px;
+    border-radius: 18px;
+
+}
+
+.left-2 .left-box-text-1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+}
+
+.left-2 .left-box-text-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.left-2-box-1:hover {
+    font-size: 17.5px;
+    box-shadow: 0 0 16px rgb(255, 255, 255);
+    /* text-shadow: 0 0 16px rgb(255, 255, 255); */
+    transition: .5s;
+}
+
+.left-2-box-2:hover {
+    font-size: 17.5px;
+    box-shadow: 0 0 16px rgb(255, 255, 255);
+    /* text-shadow: 0 0 16px rgb(255, 255, 255); */
+    transition: .5s;
+}
+
+.right {
+    width: 50%;
+    height: auto;
+}
+
+
+.minion-semicircle {
+    margin-left: 41%;
+    width: 450px;
+    height: 450px;
+    background-color: #FFD803;
+    border-radius: 50% 0 0% 50%;
+
+}
+
+
+.image-fade {
+    position: absolute;
+    top: 150px;
+    right: 1%;
+    width: 700px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.image-fade.active {
+    opacity: 1;
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+
+.client_countdown {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 50px;
+    justify-content: center;
+}
+
+
+.Countdown {
+    color: white;
+    font-family: poppins;
+    text-align: center;
+}
+
+#counter {
+    color: #FFD803;
+    font-size: larger;
+}
+
+.Countdown h2 {
+    font-size: large;
+}
+.logo_description {
+    margin-top: 20px;
+    margin-bottom: 6px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10px;
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+
+.footer {
+    margin-top: 10px;
+    height: 200px;
+    width: 100vw;
+    background-color: black;
+    color: var(--primary-text-color);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: poppins;
+    font-size: 12px;
+}
+
+.portion-1,
+.portion-2,
+.portion-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    color: var(--primary-text-color);
+}
+
+.glow {
+    cursor: pointer;
+}
+
+.glow:hover {
+    font-size: 12.4px;
+    transition: .5s;
+}
+
+
+
+
+@media screen and (max-width: 952px) {
+    body {
+        width: 100vw;
+    }
+
+    nav {
+        height: 55px;
+        position: fixed;
+        bottom: 0%;
+        border-radius: 13px 13px 0 0;
+        font-family: poppins;
+        padding: 16px 0;
+        width: 100vw;
+    }
+
+
+    .nav-icons {
+        display: none;
+    }
+
+    .nav-icons ul {
+        display: none;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .mobile_icons_responsive {
+        display: block;
+
+    }
+
+
+    .mobile_icons_responsive ul {
+        display: flex;
+        gap: 50px;
+        margin: -24px;
+        align-items: center;
+    }
+
+    .mobile_icons_responsive ul li a {
+        list-style: none;
+        font-family: 'Nunito', sans-serif;
+        text-decoration: none;
+        color: var(--primary-text-color);
+    }
+
+    .mobile_icons_responsive ul li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile_icons_responsive ul li a:hover {
+        user-select: none;
+    }
+
+    .left-2 .left-box-text-2 {
+        cursor: none;
+    }
+
+    .content {
+        display: none;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    }
+
+    .content.active {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .section-1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .left-1 .watermark img {
+        height: 250px;
+    }
+
+    .left-1 .text-1 {
+        font-size: 20px;
+    }
+
+    .left-2 {
+        width: 80%;
+        font-size: 20px;
+    }
+
+
+
+    .left-2 .left-box-text-1 {
+        font-size: 20px;
+    }
+
+
+    .left-boxes {
+        padding: 15px 30px;
+    }
+
+    .left-box-text-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+
+    .minion-semicircle {
+        margin-left: 16%;
+        width: 300px;
+        height: 300px;
+    }
+
+    .image-fade {
+        top: 5%;
+        width: 400px;
+        right: 7%;
+    }
+
+    .portion-1,
+    .portion-2,
+    .portion-3 {
+        justify-content: start;
+    }
+
+    .footer {
+        padding-top: 20px;
+        height: 150px;
+        font-size: 7px;
+    }
+}
