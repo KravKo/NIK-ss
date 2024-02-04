@@ -44,7 +44,10 @@ nav {
     margin: auto;
     margin-top: 12px;
     width: 80vw;
+    position: sticky;
+    top: 1%;
     padding: 10px 44px;
+    z-index: 100;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -53,6 +56,7 @@ nav {
     color: var(--primary-text-color);
 
 }
+
 
 .nav-icons ul {
     display: flex;
@@ -77,7 +81,17 @@ nav {
     transition: .5s;
 }
 
+.active a {
+    text-shadow: 0 0 20px white;
 
+}
+
+.highlight {
+    border: 2px solid yellow;
+    padding: 4px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px yellow;
+}
 
 .logo img {
     height: 50px;
@@ -108,7 +122,7 @@ nav {
 
 
 
-/*projects starts here*/
+/* projects starts here */
 /* -------------------------------------------------------------------------------------------- */
 .section-3 {
     display: flex;
@@ -150,6 +164,7 @@ nav {
     flex-direction: row;
     font-family: poppins;
     gap: 100px;
+    justify-content: center;
 }
 
 .clients_review h1 {
@@ -171,20 +186,20 @@ nav {
     transition: filter 0.3s ease-in-out;
 }
 
-.our_projects{
+.our_projects {
     margin-top: 30px;
     background-color: #5a419a;
     border-radius: 20px;
     padding: 10px 10px 30px;
 }
 
-.project_container{
+.project_container {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-.our_projects h1{
+.our_projects h1 {
     margin-top: 10px;
     margin-bottom: 10px;
     color: white;
@@ -231,7 +246,7 @@ nav {
     text-decoration: none;
 }
 
-.view-button:hover{
+.view-button:hover {
     background-color: var(--secondary-color);
 }
 
@@ -278,4 +293,76 @@ nav {
 .glow:hover {
     font-size: 12.4px;
     transition: .5s;
+}
+
+.popup {
+    color: white;
+    height: 90%;
+    width: 90%;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-color);
+    opacity: 0.9;
+    padding: 20px;
+    z-index: 999;
+    border-radius: 20px;
+    font-family: poppins;
+}
+
+.popup-content {
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.close-btn:hover {
+    opacity: 0.9;
+}
+
+.privacy_policy_popup {
+    width: 80%;
+}
+
+.privacy_policy_popup h1 {
+    color: yellow;
+    margin-top: 10px;
+}
+
+.privacy_policy_popup h3 {
+    font-size: small;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+@media screen and (max-width: 952px) {
+    .clients_images img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .project_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .our_projects{
+        width: 400px;
+    }
+    .clients_review{
+        width: 400px;
+        font-size: x-small;
+    }
+    .clients_rating{
+        flex-direction: column;
+        gap: 20px;
+    }
 }

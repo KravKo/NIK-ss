@@ -148,7 +148,7 @@ nav {
     height: 50%;
     bottom: 0px;
     position: relative;
-    background-color: #465fb1;
+    background-color: yellow;
     border-radius: 300px 300px 0 0;
     box-shadow: 0 0 6px white;
 }
@@ -237,7 +237,7 @@ nav {
     border-style: hidden;
     background-color: #3a3a53;
     border-radius: 30px;
-    padding: 5px 0;
+    padding: 30px 0;
 }
 
 .member {
@@ -305,4 +305,75 @@ nav {
 .glow:hover {
     font-size: 12.4px;
     transition: .5s;
+}
+
+@media screen and (max-width: 952px) {
+    .section-2-portion-1 {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+
+    .alignment-factor {
+        top: 0;
+        left: 0;
+    }
+
+    .team-images {
+        position: initial;
+    }
+
+    .section-2 {
+        align-items: center;
+    }
+
+    .section-2-portion-1 {
+        align-items: center;
+    }
+
+    .section-2-left {
+        flex-direction: column;
+    }
+
+    .section-2-left .bg-behind-teams {
+        position: absolute;
+        height: 50%;
+        width: 94%;
+        left: 14px;
+    }
+
+    .section-2-right {
+        width: 100%;
+    }
+
+    .n1 {
+        width: 400px;
+        left: 0px;
+        top: 64px;
+    }
+
+    .member {
+        flex-direction: column;
+    }
+
+    .members {
+        width: 90vw;
+        align-items: center;
+    }
+
+    .member-info {
+        align-items: center;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .member-description {
+        width: 90%;
+    }
+
+    .member1,
+    .member2,
+    .member3 {
+        width: 90vw;
+    }
 }

@@ -21,17 +21,17 @@
         </div>
         <div class="nav-icons">
             <ul>
-                <li><a  href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="team.html">Team</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="price.html">Pricing</a></li>
+                <li class="highlight"><a href="hire.html">Hire Us</a></li>
             </ul>
         </div>
 
         <div class="mobile_icons_responsive">
             <ul>
-                <li id="home_mbl" onclick="showContent(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none">
+                <li id="home_mbl" onclick="showContent(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M12 17H12.009" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
                             stroke-linejoin="round" />
                         <path
@@ -42,23 +42,6 @@
                             stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
                     </svg>
                     <p id="content1" class="content active">Home</p>
-                </li>
-                <li id="team_mbl" onclick="showContent(2)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none">
-                        <path
-                            d="M20.774 18C21.5233 18 22.1193 17.5285 22.6545 16.8691C23.7499 15.5194 21.9513 14.4408 21.2654 13.9126C20.568 13.3756 19.7894 13.0714 19 13M18 11C19.3807 11 20.5 9.88071 20.5 8.5C20.5 7.11929 19.3807 6 18 6"
-                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
-                        <path
-                            d="M3.22596 18C2.47666 18 1.88067 17.5285 1.34555 16.8691C0.250089 15.5194 2.04867 14.4408 2.73465 13.9126C3.43197 13.3756 4.21058 13.0714 5 13M5.5 11C4.11929 11 3 9.88071 3 8.5C3 7.11929 4.11929 6 5.5 6"
-                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
-                        <path
-                            d="M8.0838 15.1112C7.06203 15.743 4.38299 17.0331 6.0147 18.6474C6.81178 19.436 7.69952 20 8.81563 20H15.1844C16.3005 20 17.1882 19.436 17.9853 18.6474C19.617 17.0331 16.938 15.743 15.9162 15.1112C13.5201 13.6296 10.4799 13.6296 8.0838 15.1112Z"
-                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M15.5 7.5C15.5 9.433 13.933 11 12 11C10.067 11 8.5 9.433 8.5 7.5C8.5 5.567 10.067 4 12 4C13.933 4 15.5 5.567 15.5 7.5Z"
-                            stroke="#ffffff" stroke-width="1.5" />
-                    </svg>
-                    <p id="content2" class="content">Team</p>
                 </li>
                 <li id="projects_mbl" onclick="showContent(3)"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" viewBox="0 0 24 24" fill="none">
@@ -77,16 +60,25 @@
                     </svg>
                     <p id="content3" class="content">Projects</p>
                 </li>
-                <li id="fqa_mbl" onclick="showContent(4)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none">
-                        <circle cx="12" cy="12" r="10" stroke="#ffffff" stroke-width="1.5" />
+                <li id="team_mbl" onclick="showContent(2)"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none">
                         <path
-                            d="M10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9C14 9.39815 13.8837 9.76913 13.6831 10.0808C13.0854 11.0097 12 11.8954 12 13V13.5"
+                            d="M20.774 18C21.5233 18 22.1193 17.5285 22.6545 16.8691C23.7499 15.5194 21.9513 14.4408 21.2654 13.9126C20.568 13.3756 19.7894 13.0714 19 13M18 11C19.3807 11 20.5 9.88071 20.5 8.5C20.5 7.11929 19.3807 6 18 6"
                             stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
-                        <path d="M11.992 17H12.001" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
+                        <path
+                            d="M3.22596 18C2.47666 18 1.88067 17.5285 1.34555 16.8691C0.250089 15.5194 2.04867 14.4408 2.73465 13.9126C3.43197 13.3756 4.21058 13.0714 5 13M5.5 11C4.11929 11 3 9.88071 3 8.5C3 7.11929 4.11929 6 5.5 6"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+                        <path
+                            d="M8.0838 15.1112C7.06203 15.743 4.38299 17.0331 6.0147 18.6474C6.81178 19.436 7.69952 20 8.81563 20H15.1844C16.3005 20 17.1882 19.436 17.9853 18.6474C19.617 17.0331 16.938 15.743 15.9162 15.1112C13.5201 13.6296 10.4799 13.6296 8.0838 15.1112Z"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M15.5 7.5C15.5 9.433 13.933 11 12 11C10.067 11 8.5 9.433 8.5 7.5C8.5 5.567 10.067 4 12 4C13.933 4 15.5 5.567 15.5 7.5Z"
+                            stroke="#ffffff" stroke-width="1.5" />
                     </svg>
-                    <p id="content4" class="content">FAQ</p>
+                    <p id="content2" class="content">Team</p>
+                </li>
+                <li id="Hire_mbl" onclick="showContent(4)">
+                    <p id="content4" class="content active">Hire Us</p>
                 </li>
             </ul>
         </div>
@@ -99,36 +91,22 @@
                     <img src="Images/logo.png" alt="#">
                 </div>
                 <div class="text-1">
-                    We build amazing websites and roburst software applications
+                    We are NIK's. We trun good businesses into great businesses.
                 </div>
             </div>
             <div class="left-2">
-                <div class="client_count">
-                    <h1>We Have Made</h1>
-                    <div class="client_countdown">
-                        <div class="Countdown">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
-                                fill="none">
-                                <path
-                                    d="M20 10.128C20 6.29644 20 4.38064 18.8284 3.19032C17.6569 2 15.7712 2 12 2H10C6.22876 2 4.34315 2 3.17157 3.19032C2 4.38064 2 6.29644 2 10.128C2 13.9596 2 15.8754 3.17157 17.0657C3.64118 17.5428 4.2255 17.8287 5 18"
-                                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
-                                <path
-                                    d="M22 17.5C22 15.6251 22 14.6877 21.5225 14.0305C21.3683 13.8183 21.1817 13.6317 20.9695 13.4775C20.3123 13 19.3749 13 17.5 13H12.5C10.6251 13 9.6877 13 9.03054 13.4775C8.8183 13.6317 8.63166 13.8183 8.47746 14.0305C8 14.6877 8 15.6251 8 17.5C8 19.3749 8 20.3123 8.47746 20.9695C8.63166 21.1817 8.8183 21.3683 9.03054 21.5225C9.6877 22 10.6251 22 12.5 22H17.5C19.3749 22 20.3123 22 20.9695 21.5225C21.1817 21.3683 21.3683 21.1817 21.5225 20.9695C22 20.3123 22 19.3749 22 17.5Z"
-                                    stroke="#ffffff" stroke-width="2" />
-                                <path
-                                    d="M16.5 16L17.4199 16.7929C17.8066 17.1262 18 17.2929 18 17.5C18 17.7071 17.8066 17.8738 17.4199 18.2071L16.5 19"
-                                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                    d="M13.5 16L12.5801 16.7929C12.1934 17.1262 12 17.2929 12 17.5C12 17.7071 12.1934 17.8738 12.5801 18.2071L13.5 19"
-                                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M2.5 6H19.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            <h3 id="counter">00</h3>
-                            <h2>Websites</h2>
+
+                <a href="hire.html">
+                    <div class="client_count">
+                        <h1>We Have Made</h1>
+                        <div class="client_countdown">
+                            <div class="Countdown">
+                                <h3 id="counter">00</h3>
+                                <h2>Websites, Hire Us ></h2>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         <div class="right">
@@ -145,6 +123,103 @@
         <h3>We're a creative Web Design & Development Company in Kathmandu, Nepal. We build amazing websites and robust
             software applications.</h3>
     </div>
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-question" onclick="toggleAnswer('question1')"><span> How much will it cost to built a
+                website?</span><span>+</span></div>
+        <div class="faq-answer" id="question1-answer">After you decide to hire us, we will analyze the idea, create and
+            present you with a design, and provide you with a suitable cost estimate. The amount could roughly range
+            between NPR 2,000 up to NPR 10,000. However, the website hosting plan is not included in this amount. You
+            will need to pay for the hosting on a monthly or yearly basis. The hosting cost may vary based on the type
+            of domain and certain other factors. <a class="learn-more" href="hire.html">See more about cost and
+                pricing.</a></div>
+
+        <div class="faq-question" onclick="toggleAnswer('question2')"><span> How long will it take to build a
+                website?</span><span>+</span></div>
+        <div class="faq-answer" id="question2-answer">Firstly, we will communicate with you frequently to achieve the
+            best design that fits your criteria and satisfies you. Then, we will begin building the website. The
+            timeframe for completion may vary, taking anywhere from less than a week to a couple of weeks, depending on
+            the size of the project. <a class="learn-more" href="hire.html">View a summary of the process.</a></div>
+
+        <div class="faq-question" onclick="toggleAnswer('question3')"> <span>Why Should I choose NIK’s for my
+                website?</span> <span>+</span></div>
+        <div class="faq-answer" id="question3-answer">Our primary goal is to make websites affordable for small
+            businesses. We will never disappoint our clients regarding the price. This is what makes us distinctive in
+            the crowd. We will give extra priority to small-scale businesses. <a class="learn-more" href="team.html">See
+                more about our vision and goals .</a></div>
+    </div>
+    <!-- Popup container -->
+    <div id="popup-container" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div class="privacy_policy_popup">
+                <h1>Privacy Policy for NK'S - Website Building Company</h1>
+                <h2>Effective Date: February 1, 2024</h2>
+                <h3>NK'S, a website building company owned by Krishav Koirala and Nishanta Poudel (referred to as "we,"
+                    "our," or "us"), is committed to protecting the privacy of our users and clients. This Privacy
+                    Policy
+                    outlines how we collect, use, disclose, and safeguard your personal information when you visit our
+                    website or use our services.</h3>
+                <h2>Information We Collect:</h2>
+                <h3>1) Personal Information: <br>
+
+                    When you use our services, we may collect personal information, including but not limited to your
+                    name,
+                    email address, phone number, and billing details.
+                    <br>
+                    2) Usage Information: <br>
+
+                    We may collect information about how you interact with our website, such as the pages visited, the
+                    time
+                    spent on each page, and the features used.
+                    <br>
+                    3) Cookies: <br>
+
+
+                    Like many websites, we use cookies to enhance your browsing experience. Cookies are small data files
+                    stored on your device that help us improve our services and customize your experience.
+                </h3>
+                <h2>How We Use Your Information:</h2>
+                <h3>1) Service Delivery: <br>
+
+                    We use your personal information to provide and improve our website building services, respond to
+                    your
+                    inquiries, and fulfill your requests. <br>
+                    2) Communication:
+                    <br>
+                    We may use your contact information to communicate with you about our services, updates, and
+                    promotional
+                    offers. You can opt-out of these communications at any time.
+                    <br>
+                    3) Analytics:
+                    <br>
+                    We analyze usage data to better understand how our website and services are used, enabling us to
+                    enhance
+                    user experience and improve our offerings.
+                </h3>
+                <h2>Data Security:</h2>
+                <h3>1) Security Measures:
+                    <br>
+                    We implement industry-standard security measures to protect your information from unauthorized
+                    access,
+                    disclosure, alteration, and destruction. <br>
+                    2)Data Retention:
+                    <br>
+                    We retain your personal information only for as long as necessary to fulfill the purposes outlined
+                    in
+                    this Privacy Policy, unless a longer retention period is required or permitted by law.
+                </h3>
+                <h2>Contact Us: </h2>
+                <h3>
+                    If you have questions or concerns about our Privacy Policy, please contact us at
+                    nishantapoudel.niks@gmail.com ||krishavkoirala.niks@gmail.com
+
+                    By using our website or services, you agree to the terms outlined in this Privacy Policy.
+
+                    Thank you for choosing NK'S for your website building needs.</h3>
+            </div>
+        </div>
+    </div>
     <div class="footer">
         <div class="portion-1">
             <div class="portion-1-element-1 glow">
@@ -160,7 +235,7 @@
                 | Mobile: |
             </div>
             <div class="portion-1-element-5 glow">
-                +977 9812987337
+                +977 9815930022
             </div>
             <div class="portion-1-element-6 glow">
                 +977 9817097938
@@ -218,24 +293,19 @@
         </div>
         <div class="portion-3">
             <div class="portion-3-element-1 glow">
-                <a href="#">Terms & Conditions</a>
+                <a onclick="openPopup()">Terms & Conditions</a>
             </div>
             <div class="portion-3-element-2 glow">
-                <a href="#">Privacy Policy</a>
-            </div>
-            <div class="portion-3-element-3 glow">
-                <a href="#">Docs</a>
-            </div>
-            <div class="portion-3-element-4 glow">
-                <a href="#">Contact</a>
+                <a onclick="openPopup()">Privacy Policy</a>
             </div>
             <div class="portion-3-element-5 glow">
-                <a href="#">Manage Cookies</a>
+                <a>Manage Cookies</a>
             </div>
         </div>
     </div>
 
 </body>
+
 </html>
 
 <script src="script.js"></script>

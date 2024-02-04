@@ -9,18 +9,31 @@ function rotateImages() {
 } setInterval(rotateImages, 5000);
 
 
-//nav ko text dekhaune tarika/script
-function showContent(buttonNumber) {
-    // Hide all content divs
-    for (let i = 1; i <= 4; i++) {
-        document.getElementById('content' + i).classList.remove('active');
-    }
-
-    // Show the selected content div
-    document.getElementById('content' + buttonNumber).classList.add('active');
+function toggleAnswer(questionId) {
+  var answer = document.getElementById(questionId + '-answer');
+  answer.classList.toggle('show');
 }
 
+let home_mbl = document.getElementById('home_mbl');
+let team_mbl = document.getElementById('team_mbl')
+let projects_mbl = document.getElementById('projects_mbl');
+let Hire_mbl = document.getElementById('Hire_mbl')
 
+home_mbl.addEventListener('click', function () {
+  window.location.href = '/index.html';
+})
+
+team_mbl.addEventListener('click', function () {
+  window.location.href = '/team.html';
+})
+
+projects_mbl.addEventListener('click', function () {
+  window.location.href = '/projects.html';
+})
+
+Hire_mbl.addEventListener('click', function () {
+  window.location.href = '/hire.html';
+})
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -59,3 +72,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initial call to start the animation
     updateCounter();
   });
+  function openPopup() {
+    var popup = document.getElementById('popup-container');
+    popup.style.display = 'block';
+  }
+  
+  function closePopup() {
+    var popup = document.getElementById('popup-container');
+    popup.style.display = 'none';
+  }

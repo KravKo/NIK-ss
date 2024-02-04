@@ -7,6 +7,7 @@
     <title>Our Projects</title>    
     <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -21,10 +22,10 @@
         </div>
         <div class="nav-icons">
             <ul>
-                <li><a  href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="team.html">Team</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="price.html">Pricing</a></li>
+                <li class="active"><a href="projects.html">Projects</a></li>
+                <li class="highlight"><a href="hire.html">Hire Us</a></li>
             </ul>
         </div>
 
@@ -41,53 +42,45 @@
                             d="M22 10.5L17.6569 6.33548C14.9902 3.77849 13.6569 2.5 12 2.5C10.3431 2.5 9.00981 3.77849 6.34315 6.33548L2 10.5"
                             stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
                     </svg>
-                    <p id="content1" class="content active">Home</p>
-                </li>
-                <li id="team_mbl" onclick="showContent(2)"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                        height="24" viewBox="0 0 24 24" fill="none">
-                        <path
-                            d="M20.774 18C21.5233 18 22.1193 17.5285 22.6545 16.8691C23.7499 15.5194 21.9513 14.4408 21.2654 13.9126C20.568 13.3756 19.7894 13.0714 19 13M18 11C19.3807 11 20.5 9.88071 20.5 8.5C20.5 7.11929 19.3807 6 18 6"
-                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
-                        <path
-                            d="M3.22596 18C2.47666 18 1.88067 17.5285 1.34555 16.8691C0.250089 15.5194 2.04867 14.4408 2.73465 13.9126C3.43197 13.3756 4.21058 13.0714 5 13M5.5 11C4.11929 11 3 9.88071 3 8.5C3 7.11929 4.11929 6 5.5 6"
-                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
-                        <path
-                            d="M8.0838 15.1112C7.06203 15.743 4.38299 17.0331 6.0147 18.6474C6.81178 19.436 7.69952 20 8.81563 20H15.1844C16.3005 20 17.1882 19.436 17.9853 18.6474C19.617 17.0331 16.938 15.743 15.9162 15.1112C13.5201 13.6296 10.4799 13.6296 8.0838 15.1112Z"
-                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M15.5 7.5C15.5 9.433 13.933 11 12 11C10.067 11 8.5 9.433 8.5 7.5C8.5 5.567 10.067 4 12 4C13.933 4 15.5 5.567 15.5 7.5Z"
-                            stroke="#ffffff" stroke-width="1.5" />
-                    </svg>
-                    <p id="content2" class="content">Team</p>
+                    <p id="content1" class="content">Home</p>
                 </li>
                 <li id="projects_mbl" onclick="showContent(3)"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                        height="24" viewBox="0 0 24 24" fill="none">
-                        <path
-                            d="M10 12.3333C10 12.0233 10 11.8683 10.0341 11.7412C10.1265 11.3961 10.3961 11.1265 10.7412 11.0341C10.8683 11 11.0233 11 11.3333 11H12.6667C12.9767 11 13.1317 11 13.2588 11.0341C13.6039 11.1265 13.8735 11.3961 13.9659 11.7412C14 11.8683 14 12.0233 14 12.3333V13C14 14.1046 13.1046 15 12 15C10.8954 15 10 14.1046 10 13V12.3333Z"
-                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M13.8016 13C14.1132 12.9095 14.4666 12.8005 14.88 12.673L19.0512 11.3866C20.5358 10.9288 21.2624 10.131 21.4204 8.74977C21.4911 8.13198 21.5265 7.82308 21.4768 7.57022C21.3349 6.84864 20.7289 6.26354 19.9213 6.06839C19.6383 6 19.283 6 18.5724 6H5.42757C4.717 6 4.36172 6 4.07871 6.06839C3.27111 6.26354 2.6651 6.84864 2.52323 7.57022C2.47351 7.82308 2.50886 8.13198 2.57956 8.74977C2.73764 10.131 3.46424 10.9288 4.94882 11.3866L9.11996 12.673C9.53336 12.8005 9.88684 12.9095 10.1984 13"
-                            stroke="#ffffff" stroke-width="1.5" />
-                        <path
-                            d="M3.46283 11L3.26658 13.1723C2.91481 17.0662 2.73892 19.0131 3.86734 20.2566C4.99576 21.5 6.93851 21.5 10.824 21.5H13.176C17.0615 21.5 19.0042 21.5 20.1327 20.2566C21.2611 19.0131 21.0852 17.0662 20.7334 13.1723L20.5372 11"
-                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M15.5 5.5L15.4227 5.23509C15.0377 3.91505 14.8452 3.25503 14.3869 2.87752C13.9286 2.5 13.3199 2.5 12.1023 2.5H11.8977C10.6801 2.5 10.0714 2.5 9.61309 2.87752C9.15478 3.25503 8.96228 3.91505 8.57727 5.23509L8.5 5.5"
-                            stroke="#ffffff" stroke-width="1.5" />
-                    </svg>
-                    <p id="content3" class="content">Projects</p>
-                </li>
-                <li id="fqa_mbl" onclick="showContent(4)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none">
-                        <circle cx="12" cy="12" r="10" stroke="#ffffff" stroke-width="1.5" />
-                        <path
-                            d="M10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9C14 9.39815 13.8837 9.76913 13.6831 10.0808C13.0854 11.0097 12 11.8954 12 13V13.5"
-                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
-                        <path d="M11.992 17H12.001" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                    <p id="content4" class="content">FAQ</p>
-                </li>
+                    height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M10 12.3333C10 12.0233 10 11.8683 10.0341 11.7412C10.1265 11.3961 10.3961 11.1265 10.7412 11.0341C10.8683 11 11.0233 11 11.3333 11H12.6667C12.9767 11 13.1317 11 13.2588 11.0341C13.6039 11.1265 13.8735 11.3961 13.9659 11.7412C14 11.8683 14 12.0233 14 12.3333V13C14 14.1046 13.1046 15 12 15C10.8954 15 10 14.1046 10 13V12.3333Z"
+                        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M13.8016 13C14.1132 12.9095 14.4666 12.8005 14.88 12.673L19.0512 11.3866C20.5358 10.9288 21.2624 10.131 21.4204 8.74977C21.4911 8.13198 21.5265 7.82308 21.4768 7.57022C21.3349 6.84864 20.7289 6.26354 19.9213 6.06839C19.6383 6 19.283 6 18.5724 6H5.42757C4.717 6 4.36172 6 4.07871 6.06839C3.27111 6.26354 2.6651 6.84864 2.52323 7.57022C2.47351 7.82308 2.50886 8.13198 2.57956 8.74977C2.73764 10.131 3.46424 10.9288 4.94882 11.3866L9.11996 12.673C9.53336 12.8005 9.88684 12.9095 10.1984 13"
+                        stroke="#ffffff" stroke-width="1.5" />
+                    <path
+                        d="M3.46283 11L3.26658 13.1723C2.91481 17.0662 2.73892 19.0131 3.86734 20.2566C4.99576 21.5 6.93851 21.5 10.824 21.5H13.176C17.0615 21.5 19.0042 21.5 20.1327 20.2566C21.2611 19.0131 21.0852 17.0662 20.7334 13.1723L20.5372 11"
+                        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M15.5 5.5L15.4227 5.23509C15.0377 3.91505 14.8452 3.25503 14.3869 2.87752C13.9286 2.5 13.3199 2.5 12.1023 2.5H11.8977C10.6801 2.5 10.0714 2.5 9.61309 2.87752C9.15478 3.25503 8.96228 3.91505 8.57727 5.23509L8.5 5.5"
+                        stroke="#ffffff" stroke-width="1.5" />
+                </svg>
+                <p id="content3" class="content active">Projects</p>
+            </li>
+            <li id="team_mbl" onclick="showContent(2)"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M20.774 18C21.5233 18 22.1193 17.5285 22.6545 16.8691C23.7499 15.5194 21.9513 14.4408 21.2654 13.9126C20.568 13.3756 19.7894 13.0714 19 13M18 11C19.3807 11 20.5 9.88071 20.5 8.5C20.5 7.11929 19.3807 6 18 6"
+                    stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+                <path
+                    d="M3.22596 18C2.47666 18 1.88067 17.5285 1.34555 16.8691C0.250089 15.5194 2.04867 14.4408 2.73465 13.9126C3.43197 13.3756 4.21058 13.0714 5 13M5.5 11C4.11929 11 3 9.88071 3 8.5C3 7.11929 4.11929 6 5.5 6"
+                    stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+                <path
+                    d="M8.0838 15.1112C7.06203 15.743 4.38299 17.0331 6.0147 18.6474C6.81178 19.436 7.69952 20 8.81563 20H15.1844C16.3005 20 17.1882 19.436 17.9853 18.6474C19.617 17.0331 16.938 15.743 15.9162 15.1112C13.5201 13.6296 10.4799 13.6296 8.0838 15.1112Z"
+                    stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M15.5 7.5C15.5 9.433 13.933 11 12 11C10.067 11 8.5 9.433 8.5 7.5C8.5 5.567 10.067 4 12 4C13.933 4 15.5 5.567 15.5 7.5Z"
+                    stroke="#ffffff" stroke-width="1.5" />
+            </svg>
+            <p id="content2" class="content">Team</p>
+        </li>
+        <li id="Hire_mbl" onclick="showContent(4)">
+            <p id="content4" class="content active">Hire Us</p>
+        </li>
             </ul>
         </div>
     </nav>
@@ -352,24 +345,92 @@
         </div>
         <div class="portion-3">
             <div class="portion-3-element-1 glow">
-                <a href="#">Terms & Conditions</a>
+                <a onclick="openPopup()">Terms & Conditions</a>
             </div>
             <div class="portion-3-element-2 glow">
-                <a href="#">Privacy Policy</a>
-            </div>
-            <div class="portion-3-element-3 glow">
-                <a href="#">Docs</a>
-            </div>
-            <div class="portion-3-element-4 glow">
-                <a href="#">Contact</a>
+                <a onclick="openPopup()">Privacy Policy</a>
             </div>
             <div class="portion-3-element-5 glow">
-                <a href="#">Manage Cookies</a>
+                <a>Manage Cookies</a>
             </div>
         </div>
     </div>
+
+     <!-- Popup container -->
+     <div id="popup-container" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div class="privacy_policy_popup">
+                <h1>Privacy Policy for NK'S - Website Building Company</h1>
+                <h2>Effective Date: February 1, 2024</h2>
+                <h3>NK'S, a website building company owned by Krishav Koirala and Nishanta Poudel (referred to as "we,"
+                    "our," or "us"), is committed to protecting the privacy of our users and clients. This Privacy
+                    Policy
+                    outlines how we collect, use, disclose, and safeguard your personal information when you visit our
+                    website or use our services.</h3>
+                <h2>Information We Collect:</h2>
+                <h3>1) Personal Information: <br>
+
+                    When you use our services, we may collect personal information, including but not limited to your
+                    name,
+                    email address, phone number, and billing details.
+                    <br>
+                    2) Usage Information: <br>
+
+                    We may collect information about how you interact with our website, such as the pages visited, the
+                    time
+                    spent on each page, and the features used.
+                    <br>
+                    3) Cookies: <br>
+
+
+                    Like many websites, we use cookies to enhance your browsing experience. Cookies are small data files
+                    stored on your device that help us improve our services and customize your experience.
+                </h3>
+                <h2>How We Use Your Information:</h2>
+                <h3>1) Service Delivery: <br>
+
+                    We use your personal information to provide and improve our website building services, respond to
+                    your
+                    inquiries, and fulfill your requests. <br>
+                    2) Communication:
+                    <br>
+                    We may use your contact information to communicate with you about our services, updates, and
+                    promotional
+                    offers. You can opt-out of these communications at any time.
+                    <br>
+                    3) Analytics:
+                    <br>
+                    We analyze usage data to better understand how our website and services are used, enabling us to
+                    enhance
+                    user experience and improve our offerings.
+                </h3>
+                <h2>Data Security:</h2>
+                <h3>1) Security Measures:
+                    <br>
+                    We implement industry-standard security measures to protect your information from unauthorized
+                    access,
+                    disclosure, alteration, and destruction. <br>
+                    2)Data Retention:
+                    <br>
+                    We retain your personal information only for as long as necessary to fulfill the purposes outlined
+                    in
+                    this Privacy Policy, unless a longer retention period is required or permitted by law.
+                </h3>
+                <h2>Contact Us: </h2>
+                <h3>
+                    If you have questions or concerns about our Privacy Policy, please contact us at contact@nksweb.com.
+
+                    By using our website or services, you agree to the terms outlined in this Privacy Policy.
+
+                    Thank you for choosing NK'S for your website building needs.</h3>
+            </div>
+        </div>
+    </div>
+
 </body>
 
-<script src="script.js"></script>
 
 </html>
+
+<script src="script.js"></script>

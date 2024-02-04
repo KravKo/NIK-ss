@@ -44,7 +44,10 @@ nav {
     margin: auto;
     margin-top: 12px;
     width: 80vw;
+    position: sticky;
+    top: 1%;
     padding: 10px 44px;
+    z-index: 100;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -54,8 +57,29 @@ nav {
 
 }
 
+.active a {
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+
+}
+
+.highlight {
+    border: 2px solid yellow;
+    padding: 4px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px yellow;
+}
+
+.highlight:hover {
+    text-shadow: 0 0 20px yellow;
+}
+
+#Hire_mbl{
+    color: yellow;
+}
+
 .nav-icons ul {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
@@ -155,13 +179,19 @@ nav {
     padding: 18px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
     justify-content: center;
+    text-align: center;
     align-items: center;
     margin: auto;
     margin-bottom: 20px;
     color: var(--primary-text-color);
     font-family: poppins;
+}
+.section-1 a {
+    cursor: pointer;
+    border: none;
+    color: white;
+    text-decoration: none;
 }
 
 .left-boxes {
@@ -239,14 +269,16 @@ nav {
     -ms-user-select: none;
 }
 
-
-
 .client_countdown {
     display: flex;
     flex-direction: row;
     text-align: center;
     gap: 50px;
     justify-content: center;
+}
+
+.client_count h1 {
+    font-size: large;
 }
 
 
@@ -258,12 +290,14 @@ nav {
 
 #counter {
     color: #FFD803;
-    font-size: larger;
+    font-size: 100px;
 }
 
 .Countdown h2 {
     font-size: large;
 }
+
+
 .logo_description {
     margin-top: 20px;
     margin-bottom: 6px;
@@ -273,6 +307,53 @@ nav {
     align-items: center;
     text-align: center;
     display: block;
+}
+
+.popup {
+    color: white;
+    height: 90%;
+    width: 90%;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-color);
+    opacity: 0.9;
+    padding: 20px;
+    z-index: 999;
+    border-radius: 20px;
+    font-family: poppins;
+}
+
+.popup-content {
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.close-btn:hover {
+    opacity: 0.9;
+}
+
+.privacy_policy_popup {
+    width: 80%;
+}
+
+.privacy_policy_popup h1 {
+    color: yellow;
+    margin-top: 10px;
+}
+
+.privacy_policy_popup h3 {
+    font-size: small;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .footer {
@@ -311,7 +392,55 @@ nav {
 }
 
 
+.faq-container {
+    color: white;
+    width: 700px;
+    font-family: poppins;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 20px 20px;
+    background-color: #5a419a;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
 
+.faq-question {
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 10px;
+    width: 600px;
+    color: white;
+    background-color: #474762;
+    transition: background-color 0.3s ease-in-out;
+    border: 2px dashed white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #474762;
+    color: white;
+    width: 600px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.faq-answer.show {
+    display: block;
+    max-height: 1000px;
+    /* Adjust to a sufficiently large value */
+    padding: 10px;
+}
+
+.learn-more {
+    color: var(--primary-text-color);
+}
 
 @media screen and (max-width: 952px) {
     body {
@@ -321,13 +450,13 @@ nav {
     nav {
         height: 55px;
         position: fixed;
+        top: auto;
         bottom: 0%;
         border-radius: 13px 13px 0 0;
         font-family: poppins;
         padding: 16px 0;
         width: 100vw;
     }
-
 
     .nav-icons {
         display: none;
@@ -450,6 +579,18 @@ nav {
         right: 7%;
     }
 
+    .faq-container{
+        width: 300px;
+        font-size: x-small;
+    }
+
+    .faq-answer{
+        width: 290px;
+    }
+
+    .faq-question{
+        width: 290px;
+    }
     .portion-1,
     .portion-2,
     .portion-3 {
@@ -461,4 +602,21 @@ nav {
         height: 150px;
         font-size: 7px;
     }
+
+    
+.privacy_policy_popup {
+    width: 90%;
+}
+
+.privacy_policy_popup h1 {
+    color: yellow;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.privacy_policy_popup h3 {
+    font-size: 10px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
 }
