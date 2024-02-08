@@ -20,19 +20,19 @@ let projects_mbl = document.getElementById('projects_mbl');
 let Hire_mbl = document.getElementById('Hire_mbl')
 
 home_mbl.addEventListener('click', function () {
-  window.location.href = '/NIK-ss/index.html';
+  window.location.href = '/N-K-s/index.html';
 })
 
 team_mbl.addEventListener('click', function () {
-  window.location.href = '/NIK-ss/team.html';
+  window.location.href = '/N-K-s/team.html';
 })
 
 projects_mbl.addEventListener('click', function () {
-  window.location.href = '/NIK-ss/projects.html';
+  window.location.href = '/N-K-s/projects.html';
 })
 
 Hire_mbl.addEventListener('click', function () {
-  window.location.href = '/NIK-ss/hire.html';
+  window.location.href = '/N-K-s/hire.html';
 })
 
 
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var counterElement = document.getElementById('counter');
   
     // Set the target number
-    var targetNumber = 6;
+    var targetNumber = 5;
     var duration = 2000; // Animation duration in milliseconds
     var interval = 20; // Update interval in milliseconds
     var repeatInterval = 10000; // Repeat interval in milliseconds
@@ -72,6 +72,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initial call to start the animation
     updateCounter();
   });
+
+
   function openPopup() {
     var popup = document.getElementById('popup-container');
     popup.style.display = 'block';

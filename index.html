@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>NIK's</title>
+    <title>N&K's</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
@@ -91,7 +91,7 @@
                     <img src="Images/logo.png" alt="#">
                 </div>
                 <div class="text-1">
-                    We are NIK's. We trun good businesses into great businesses.
+                    We are N&K's. We trun good businesses into great businesses.
                 </div>
             </div>
             <div class="left-2">
@@ -141,7 +141,7 @@
             timeframe for completion may vary, taking anywhere from less than a week to a couple of weeks, depending on
             the size of the project. <a class="learn-more" href="hire.html">View a summary of the process.</a></div>
 
-        <div class="faq-question" onclick="toggleAnswer('question3')"> <span>Why Should I choose NIK’s for my
+        <div class="faq-question" onclick="toggleAnswer('question3')"> <span>Why Should I choose N&K's for my
                 website?</span> <span>+</span></div>
         <div class="faq-answer" id="question3-answer">Our primary goal is to make websites affordable for small
             businesses. We will never disappoint our clients regarding the price. This is what makes us distinctive in
@@ -150,7 +150,13 @@
     </div>
     <!-- Popup container -->
     <div id="popup-container" class="popup">
-        <div class="popup-content">
+        <div id="ads" class="ads">
+            <span class="close-btn" onclick="closeads()">&times;</span>
+            <center> <a href="/hire.html"><img  src="Images/graphics/plan.jpg" alt="" srcset="">
+            </a></center>
+            
+        </div>
+        <div id="privacy_policy_popup" class="popup-content">
             <span class="close-btn" onclick="closePopup()">&times;</span>
             <div class="privacy_policy_popup">
                 <h1>Privacy Policy for NK'S - Website Building Company</h1>
@@ -229,7 +235,7 @@
                 | Email: |
             </div>
             <div class="portion-1-element-3 glow">
-                niks.contact.gmail.com
+                nks.contact.gmail.com
             </div>
             <div class="portion-1-element-4 glow">
                 | Mobile: |
@@ -282,13 +288,7 @@
                     </svg></a>
             </div>
             <div class="portion-2-element-1 glow">
-                XYZ Plaza, 6th & 7th floor
-            </div>
-            <div class="portion-2-element-2 glow">
-                Kathmandu-Mall Kathmandu
-            </div>
-            <div class="portion-2-element-3 glow">
-                Nepal, Asia
+                Kathmandu, Nepal
             </div>
         </div>
         <div class="portion-3">
@@ -303,9 +303,40 @@
             </div>
         </div>
     </div>
+        <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/65c215050ff6374032c9e065/1hlv248h3';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 
 </body>
 
 </html>
+<script>
+
+    function openads() {
+        document.getElementById('popup-container').style.display = 'block';
+        document.getElementById('ads').style.display = 'block';
+        document.getElementById('privacy_policy_popup').style.display = 'none';
+    }
+
+    function closeads() {
+        document.getElementById('popup-container').style.display = 'none';
+
+        document.getElementById('ads').style.display = 'none';
+        document.getElementById('privacy_policy_popup').style.display = 'block';
+    }
+    window.onload = function () {
+        openads();
+    };
+</script>
 
 <script src="script.js"></script>

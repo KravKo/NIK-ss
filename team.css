@@ -163,8 +163,8 @@ nav {
 }
 
 .n1 {
-    width: 460px;
-    top: 42px;
+    width: 400px;
+    top: -27px;
     left: -127px;
     position: relative;
     z-index: 10;
@@ -347,9 +347,9 @@ nav {
     }
 
     .n1 {
-        width: 400px;
-        left: 0px;
-        top: 64px;
+        width: 340px;
+        left: 5px;
+        top: 16px;
     }
 
     .member {
